@@ -1,4 +1,6 @@
-﻿using Microsoft.SemanticKernel;
+// Copyright (c) Microsoft. All rights reserved.
+
+using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.Connectors.OpenAI;
 using GettingStarted;
 using Microsoft.Extensions.DependencyInjection;
@@ -130,7 +132,7 @@ namespace SemanticKernelSample
                     kernel.Plugins.AddFromType<Step6_Kusto_Agent>("Kusto");
 
                     var history = new ChatHistory();
-                    history.AddSystemMessage("You are an intelligent assistant that can analyze Kusto logs. Use the tool 'Kusto' as needed.");
+                    history.AddSystemMessage("You are an intelligent assistant that can analyze Kusto logs. Use the tool 'Kusto' as needed. If chat history already contains logs, reuse them. If you need perform any custom actionss work on this JSON.");
 
                     Console.WriteLine("Enter your message (type 'exit' to quit):");
                     string? userInput;
