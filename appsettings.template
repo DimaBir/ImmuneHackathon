@@ -1,0 +1,17 @@
+{
+  "OpenAI": {
+      "DeploymentName": "azure-ai-foundry-deployment-name-goes-here",
+      "ModelId": "text-embedding-ada-002",
+      "Endpoint": "https://immune-hackathon.openai.azure.com/",
+      "ApiKey": "your-openai-api-key-goes-here-donot-push-it-to-repo"
+  },
+  "Cosmos": {
+      "ConnectionString": "your-connection-string-from-azure-cosmos-db",
+      "DatabaseName": "your-database-name",
+      "ContainerName": "your-container-name"
+  },
+  "Kusto": {
+      "Uri": "our-kusto-url-goes-here",
+      "BearerToken": "your-bearer"  
+  }
+}
