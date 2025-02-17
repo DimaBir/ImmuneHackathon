@@ -31,7 +31,7 @@ namespace SemanticKernelExamples
                 s_config["OpenAI:ApiKey"] ?? throw Missing("OpenAI:ApiKey");
         }
 
-        public static class Cosmos
+        public static class CosmosDB
         {
             public static string ConnectionString =>
                 s_config["Cosmos:ConnectionString"] ?? throw Missing("Cosmos:ConnectionString");
