@@ -19,7 +19,7 @@ namespace SemanticKernelSample
             Console.WriteLine("1: Run Step1_Create_Kernel example (using AppConfiguration)");
             Console.WriteLine("2: Run Step2_Add_Plugins example (using AppConfiguration)");
             Console.WriteLine("3: Run Step3_Chat_Prompt example (using AppConfiguration)");
-            Console.WriteLine("4: Run Step4_Chat_Agent example (using AppConfiguration)");
+            Console.WriteLine("3b: Run Step3_User_Interaction_Chat_Prompt example (using AppConfiguration)");
             Console.WriteLine("5: Run Step5_Cosmos_Agent example (using AppConfiguration)");
             Console.WriteLine("6: Run Step6_Kusto_Agent example (using AppConfiguration)");
             Console.WriteLine("q: Quit");
@@ -43,6 +43,11 @@ namespace SemanticKernelSample
                 {
                     var step3 = new Step3_Chat_Prompt();
                     await step3.InvokeChatPromptAsync();
+                }
+                else if (selection == "3b")
+                {
+                    var step3_bonus = new Step3_User_Interaction_Chat_Prompt();
+                    await step3_bonus.InvokeUserInteractionChatPromptAsync();
                 }
                 else if (selection == "4")
                 {
