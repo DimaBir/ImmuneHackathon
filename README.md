@@ -9,13 +9,25 @@ This repository provides a hands-on guide for exploring Microsoft's Semantic Ker
   - Deployment name
   - Endpoint URL
   - API key
-- Visual Studio Code or Visual Studio 2022
+- **For Visual Studio Code users:** Install the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) to enable debugging with F5 or running the code.
+- **For Visual Studio users:** You can Debug and Run as regular Console App.
 
 ## Getting Started
-1. Clone this repository.
-2. Configure Azure OpenAI credentials in `appsettings.json`.
-3. Open the solution in Visual Studio Code.
-4. Run examples from each step.
+1. **Clone the Repository:**  
+   Run the following command or clone from GitHub:  
+   `git clone https://github.com/DimaBir/ImmuneHackathon.git`
+
+2. **Configure Your Keys:**  
+   - Open the file `appsettings.template`.
+   - Fill in your personal Azure OpenAI credentials (Deployment name, Endpoint URL, API key, etc.).
+   - Save your changes and **rename** the file to `appsettings.json`.
+
+3. **Open the Solution:**  
+   - **For Visual Studio Code:** Open the folder in VSCode. Ensure the C# extension is installed to run or debug the code with F5.
+   - **For Visual Studio:** Open the solution as described in the current README.
+
+4. **Run the Examples:**  
+   Navigate to the desired step and run the examples to explore various aspects of the Semantic Kernel framework.
 
 ## Learning Path
 
