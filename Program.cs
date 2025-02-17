@@ -20,6 +20,7 @@ namespace SemanticKernelSample
             Console.WriteLine("2: Run Step2_Add_Plugins example (using AppConfiguration)");
             Console.WriteLine("3: Run Step3_Chat_Prompt example (using AppConfiguration)");
             Console.WriteLine("3b: Run Step3_User_Interaction_Chat_Prompt example (using AppConfiguration)");
+            Console.WriteLine("4: Run Step4_Chat_Agent example (using AppConfiguration)");
             Console.WriteLine("5: Run Step5_Cosmos_Agent example (using AppConfiguration)");
             Console.WriteLine("6: Run Step6_Kusto_Agent example (using AppConfiguration)");
             Console.WriteLine("q: Quit");
